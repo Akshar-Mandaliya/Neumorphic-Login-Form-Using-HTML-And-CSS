@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #ecf0f3;
+        }
+
+        .login-container {
+            background: #ecf0f3;
+            padding: 40px;
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 7px 7px 15px #babecc, -7px -7px 15px #ffffff;
+        }
+
+        .login-container h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .form-group input {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #ecf0f3;
+            box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            box-shadow: inset 3px 3px 6px #babecc, inset -3px -3px 6px #ffffff;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #007bff;
+            color: white;
+            font-size: 1rem;
+            text-transform: uppercase;
+            box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-button:hover {
+            background: #0056b3;
+        }
+
+        .login-button:active {
+            box-shadow: inset 3px 3px 6px #babecc, inset -3px -3px 6px #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button type="submit" class="login-button">Sign In</button>
+        </form>
+    </div>
+</body>
+</html>
